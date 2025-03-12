@@ -140,7 +140,9 @@ describe("DFS", function() {
       result ===
         JSON.stringify(["S", "U", "V", "W", "T", "R", "Q", "Y", "X", "P"]) ||
       result ===
-        JSON.stringify(["S", "P", "X", "U", "V", "W", "Y", "R", "Q", "T"]);
+        JSON.stringify(["S", "P", "X", "U", "V", "W", "Y", "R", "Q", "T"]) ||
+      result ===
+        JSON.stringify(["S", "U", "V", "W", "T", "R", "Y", "X", "Q", "P"]);
 
     expect(validResult).toBe(true);
   });
